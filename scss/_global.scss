@@ -1,0 +1,64 @@
+body {
+   font-family: 'Roboto';
+   font-size: 14px;
+   color: #333333;
+   // font-weight: 600;
+   // @extend %ptsans-regular;
+   // color: $default;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+   width: 100%;
+   position: relative;
+
+   // background-color: #f4f4f4;
+   &.shadow {
+      background-color: rgba(0, 0, 0, .102);
+   }
+}
+
+.main {
+   flex: 1 1 auto;
+}
+
+.container {
+   // max-width: 1170px; //1140
+   margin: 0 auto;
+   padding: 0 15px;
+
+   @media #{$tablet_device} {
+      max-width: 736px;
+   }
+
+   @media #{$desktop_device} {
+      max-width: 1098px;
+   }
+
+   @media #{$large_device} {
+      max-width: 1483px;
+   }
+
+   // @media #{$medium_device} {
+   //   max-width: 1198px;
+   // }
+
+}
+
+a {
+   display: inline-block;
+   transition: .3s all ease;
+}
+
+// if the bootstrap is connected
+
+dl,
+ol,
+ul,
+p {
+   margin: 0;
+   padding: 0;
+}
